@@ -25,6 +25,14 @@ body{
     visibility:hidden;
  }
  
+#sec_banner>h2{
+    display:none;
+    visibility:hidden;
+    width:0; height:0;
+    overflow:hidden;
+    text-indent:-99999px; 
+}
+
 
 /*헤더영역*/
 #private_menu>li{
@@ -125,7 +133,7 @@ body{
 
 .best span{
     display: block;
-    font-weight: 16px;
+    font-size: 16px;
     color: #F06C5E;
     font-weight: bold;
     padding:15px 20px;
@@ -153,7 +161,7 @@ body{
 
 .mdpick span{
     display: block;
-    font-weight: 16px;
+    font-size: 16px;
     color: #F06C5E;
     font-weight: bold;
     padding:10px 20px;
