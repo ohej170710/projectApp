@@ -1,0 +1,204 @@
+@charset "utf-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import 'pc.css';
+@import 'mobile.css';
+
+/*
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+a{text-decoration: none;}
+a:link, a:visited, a:hover, a:active{color: #222;}
+img{vertical-align: top;}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+
+.clear::after{
+    content:'';
+    display:block;
+    clear:both;
+    width:0; height:0;
+    visibility:hidden;
+ }
+ 
+
+/*헤더영역*/
+#private_menu>li{
+    float:left;
+}
+
+#private_menu>li>a{
+    display: block;
+    width: 100%;
+    position: relative;
+    padding-top:30px;
+}
+
+#private_menu>li>a::before{
+    content: '';
+    display: block;
+    width: 24px;
+    height:24px;
+    position: absolute;
+    top:0px;
+    left:50%;
+    transform: translate(-50%);
+    background: url('../images/my_icon1.png') no-repeat;
+}
+
+#private_menu>li:nth-child(2)>a::before{
+    background-image: url('../images/my_icon2.png');
+}
+#private_menu>li:nth-child(3)>a::before{
+    background-image: url('../images/my_icon3.png');
+}
+
+
+
+/*추천여행지 영역*/
+#sec_recommend{width: 100%; margin-top:100px; overflow: hidden; position: relative;}
+
+.rounded_title{
+    width:160px;
+    height:24px;
+    line-height: 24px;
+    border: 2px solid #66cccc;
+    border-radius: 12.5px;
+    text-align: center;
+    color: #66cccc;
+    font-weight: bold;
+}
+
+.section_title{
+    font-size: 32px;
+    font-weight: bold;
+    margin:20px 0 40px;
+}
+
+.recommend_wrap>ul>li>a img{
+    width: 100%;
+    height:100%;
+    border-radius: 50%; 
+    overflow: hidden;
+}
+
+.recommend_wrap>ul>li>a{
+    display: block;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.recommend_wrap>ul>li h4{
+    color: #fff;
+    font-weight: bold;
+    font-size: 32px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/*베스트영역*/
+#sec_best{margin-top:100px; overflow: hidden; position: relative;}
+#sec_best>h2.rounded_title{
+    width:215px;
+    margin: 0 auto;
+}
+#sec_best>h3.section_title{text-align: center;}
+
+#best_wrap{width:100%;}
+
+.best:hover .best_img img{transform: scale(1.2); transition: all 0.6s;}
+
+.best_img img{width:100%; height:100%; transition: all 0.6s;}
+
+.best h4{font-size: 12px; margin:15px 0 15px 20px;}
+
+.best p{font-size: 16px; padding:0 20px; line-height: 1.4; font-weight: bold;}
+
+.best span{
+    display: block;
+    font-weight: 16px;
+    color: #F06C5E;
+    font-weight: bold;
+    padding:15px 20px;
+}
+
+
+
+/*mdpick*/
+#sec_mdpick{
+    margin-top:80px;
+    background-color:rgba(179, 226, 231, 0.7);
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#sec_mdpick>h2{font-size: 24px; margin: 60px auto 30px;}
+#sec_mdpick>h3{font-size: 30px; color:#F06C5E; font-weight: bold;}
+
+#mdpick_btns>button{background-color:transparent;border: 0; cursor: pointer;}
+
+.mdpick h4{font-size: 12px; margin:10px 0 10px 20px; color:#777;}
+
+.mdpick p{font-size: 16px; padding:0 20px; line-height: 1.4; font-weight: bold;}
+
+.mdpick span{
+    display: block;
+    font-weight: 16px;
+    color: #F06C5E;
+    font-weight: bold;
+    padding:10px 20px;
+}
+
+
+
+/*event영역*/
+#sec_event{margin-top: 100px; overflow: hidden;}
+#sec_event>h2.rounded_title{width:150px; margin: 0 auto;}
+#sec_event>h3.section_title{text-align: center;}
+
+
+
+/*푸터영역*/
+#footer{
+    width:100%;
+    margin:120px auto 0;
+    position: relative;
+}
+
+.footer_menu>li>a{
+    display: block;
+    text-align: center;
+}
+.menu_private>a{
+    color:#F06C5E;
+}
+
+.customer_center>h3{
+    font-size: 18px;
+    
+}
+.customer_center>h4{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin:30px 0;
+    font-weight: bold;
+    color:#66cccc
+}
+
+.customer_center>p{
+    font-size: 18px;
+    line-height: 1.5;
+    color:#777;
+}
+
+
